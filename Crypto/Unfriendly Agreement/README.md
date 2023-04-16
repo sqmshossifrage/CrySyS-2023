@@ -66,7 +66,7 @@ import hashlib
 from Crypto.Util.number import bytes_to_long, long_to_bytes
 
 q = ZZ('0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F')
-E = EllipticCurve( GF(q), [0, 7] )
+E = EllipticCurve(GF(q), [0, 7])
 G = E(0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798, 0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8)
 p = G.order()
 def to_bytes(a): 
@@ -75,7 +75,7 @@ def to_bytes(a):
 def hashint(a):
     h = hashlib.sha256()
     h.update(a)
-    return int(h.hexdigest(), 16)%p
+    return int(h.hexdigest(), 16) % p
 
 # Alice secretly generates (stubbed)
 xA = 7606021191029346730294824106541689883132070989190040895156382289316678384418
@@ -101,38 +101,38 @@ RB1 = rB1*G
 RB2 = rB2*G
 
 # Alice and Bob both have
-L = long_to_bytes(hashint(to_bytes(XA)+to_bytes(XB)))
-aA = hashint(L+to_bytes(XA))
-aB = hashint(L+to_bytes(XB))
+L = long_to_bytes(hashint(to_bytes(XA) + to_bytes(XB)))
+aA = hashint(L + to_bytes(XA))
+aB = hashint(L + to_bytes(XB))
 X = aA * XA + aB * XB
 R1 = RA1 + RB1
 R2 = RA2 + RB2
-c1 = hashint(to_bytes(X)+to_bytes(R1)+M1)
-c2 = hashint(to_bytes(X)+to_bytes(R2)+M2)
+c1 = hashint(to_bytes(X) + to_bytes(R1) + M1)
+c2 = hashint(to_bytes(X) + to_bytes(R2) + M2)
 
 # Alice sends to Bob
-SA1_off = (t + rA1 + aA*c1*xA)%p
-SA2_off = (t + rA2 + aA*c2*xA)%p
+SA1_off = (t + rA1 + aA*c1*xA) % p
+SA2_off = (t + rA2 + aA*c2*xA) % p
 T = t*G
 
 # Bob computes and verifies
 # If verified, send to Alice SB1
-SB1 = (rB1 + aB*c1*xB)%p
-assert(((SB1 + SA1_off)%p)*G == (R1+T)+c1*X)
+SB1 = (rB1 + aB*c1*xB) % p
+assert(((SB1 + SA1_off) % p)*G == (R1 + T) + c1*X)
 
 # Alice computes and publishes
-sC1 = (SB1 + SA1_off - t)%p
+sC1 = (SB1 + SA1_off - t) % p
 
 # Alice claims her money by verifying
-assert(sC1*G == R1+c1*X)
+assert(sC1*G == R1 + c1*X)
 
 # Bob computes, publishes sC2
-t = (SB1 + SA1_off - sC1)%p
-SB2 = (rB2 + aB*c2*xB)%p
-sC2 = (SB2 + SA2_off - t)%p
+t = (SB1 + SA1_off - sC1) % p
+SB2 = (rB2 + aB*c2*xB) % p
+sC2 = (SB2 + SA2_off - t) % p
 
 # Bob claims his money by verifying
-assert(sC2*G == R2+c2*X)
+assert(sC2*G == R2 + c2*X)
 ```
 
 
