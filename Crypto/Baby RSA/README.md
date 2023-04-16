@@ -1,4 +1,4 @@
-The script is a textbook RSA encrypting the flag $m$ with two coprime public exponents. The modulus $n$, the public exponenets $e_1, e_2$, and their corresponding ciphertext $c_1, c_2$ are all given. Our goal is to recover the flag $m$. 
+The script is a textbook RSA encrypting the flag $m$ with two coprime public exponents. The modulus $n$, the public exponents $e_1, e_2$, and their corresponding ciphertext $c_1, c_2$ are all given. Our goal is to recover the flag $m$. 
 
 Recall that RSA is hard precisely because finding the private exponent, i.e. inverse of the public exponent in $\mathbb Z_n^\times$, is hard. However, if we have two coprime public exponents encrypting the same message, we can exploit the [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity) so we don't have to find the private exponents. 
 
