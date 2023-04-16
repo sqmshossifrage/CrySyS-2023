@@ -1,6 +1,8 @@
 # CrySyS Security Challenge 2023
 
-I played [CrySyS Security Challenge 2023](https://secchallenge.crysys.hu/) during the last two weeks. Now it's time for writeups! 
+I played [CrySyS Security Challenge 2023](https://secchallenge.crysys.hu/) during the last two weeks and had a great time. Now it's time for writeups! 
+
+Since it's against the rule to provide one-click solutions to challenges, I would rather call my "writeup" a "long hint". 
 
 ## Crypto
 * raw power
@@ -16,7 +18,7 @@ I played [CrySyS Security Challenge 2023](https://secchallenge.crysys.hu/) durin
 * Refinery
 * A pro gamer move
 
-## Reversing
+## Reverse
 * BabyVM
 * heaptor2
 * Emoji 256
