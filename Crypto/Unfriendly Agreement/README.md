@@ -1,4 +1,4 @@
-I first searched online for key words such as "adaptor signature", "atomic swap", "MuSig protocol", and figured out that these concepts are built on top of each other. To solve this challenge, we need to learn the following components step by step:
+I first searched online for key words such as "adaptor signature", "atomic swap", "MuSig protocol", and figured out that these concepts were built on top of each other. To solve this challenge, we need to learn the following components step by step:
 1. [Schnorr signature](https://en.wikipedia.org/wiki/Schnorr_signature)
 2. [Schnorr multi-signature (`MuSig` protocol)](https://eprint.iacr.org/2018/068.pdf)
 3. [Adaptor signature and atomic swap](https://www.youtube.com/watch?v=ovCBT1gyk9c)
