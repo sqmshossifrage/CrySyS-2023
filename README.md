@@ -2,7 +2,7 @@
 
 I played [CrySyS Security Challenge 2023](https://secchallenge.crysys.hu/) during the last two weeks and [had a great time](https://github.com/sqmshossifrage/CrySyS-2023/blob/main/image.png). Now it's time for writeups! 
 
-Since it's against the rule to provide one-click solutions to challenges, I would rather call my "writeup" a "long hint". 
+Since it's against the rule to provide one-click solutions to challenges, I would rather call my writeups "lengthy hints". 
 
 ## Crypto
 * [raw power](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Crypto/raw%20power)
@@ -18,19 +18,19 @@ Since it's against the rule to provide one-click solutions to challenges, I woul
 * Refinery
 * A pro gamer move
 
-## Reverse
-* BabyVM
-* heaptor2
-* Emoji 256
-* Onions
-* Symbolism
-
 ## Misc
 * Remember AI
 * Existential CrySyS
 * jif.rtfm
 * Infoleak
 * What's the diagnosis?
+
+## Reverse
+* BabyVM
+* heaptor2
+* Emoji 256
+* Onions
+* Symbolism
 
 ## Web
 * A Jim Brown and an Ella Fitzgerald
