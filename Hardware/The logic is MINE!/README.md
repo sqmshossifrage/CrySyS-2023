@@ -1,4 +1,4 @@
-First download [Mintest](https://www.minetest.net/) and [Mesecons](https://mesecons.net/). Following the instruction for installing [Mod](https://wiki.minetest.net/Installing_Mods) and [World](https://wiki.minetest.net/Worlds). Explore the world and it seems like a huge circuit with input multiple-bit on/off switches, and a single 1-bit output lamp. The goal is clear: try to find an input such that the output lights the lamp up. This is a classical [Boolean satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) that can be solved with [`Z3`](https://github.com/Z3Prover/z3). 
+First download [Mintest](https://www.minetest.net/) and [Mesecons](https://mesecons.net/). Following the instruction for installing [Mod](https://wiki.minetest.net/Installing_Mods) and [World](https://wiki.minetest.net/Worlds). Explore the world and it seems like a huge circuit with input multiple binary levers, and a single 1-bit output lamp. The goal is clear: try to find an input such that the output lights the lamp up. This is a classical [Boolean satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) that can be solved with [`Z3`](https://github.com/Z3Prover/z3). 
 
 Then we realize that it's not possible to manually parse the circuit - it has so many wires and gates. A search online indicates that [Google CTF Quals has a similar challenge](https://ctftime.org/task/8795). Moreover, [LiveOverflow](https://www.youtube.com/@LiveOverflow) has a [writeup](https://liveoverflow.com/minetest/) and [video](https://youtu.be/nI8Q1bqT8QU) on that challenge. 
 
@@ -20,4 +20,12 @@ elif c == 'R' and d == 'down':
 elif c == 'R' and d == 'up':
     return (x,y-1),'NOR_{}_{}'.format(x,y-1)  
 ```
-Our last task is to find the starting point on the grid. If everything works correctly, the satisfiability problem will be solved in a second. 
+
+One potential improvement comes to the naming of Boolean variables in `Z3`. When the circuit parser hits a lever, it returns `return Bool('input_'+(str(y).zfill(3)))` so the name of Boolean variables can be easily sorted. To solve the circuit, use 
+```python
+s = Solver()
+s.add(circuit==True)
+if s.check() == sat:
+    m = s.model()
+```
+If everything works correctly, the satisfiability problem will be solved in a second. Gathering the correct binary sequence, and convert them to bytes will reveal the flag. 

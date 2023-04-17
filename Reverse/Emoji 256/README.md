@@ -1,0 +1,1 @@
+This is the hardest one among all challenges I solved in the CTF. We are given a binary and a few lines of emoji. First play with the binary, we realize that if we 
