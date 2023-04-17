@@ -12,11 +12,11 @@ Since it's against the rule to provide one-click solutions to challenges, I woul
 * [Unfriendly Agreement](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Crypto/Unfriendly%20Agreement)
 
 ## Hardware
-* The logic is MINE!
-* Show me D vault
-* An eye in the SKy
-* Refinery
-* A pro gamer move
+* [The logic is MINE!](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Hardware/The%20logic%20is%20MINE!)
+* [Show me D vault](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Hardware/Show%20me%20D%20vault)
+* [An eye in the SKy](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Hardware/An%20eye%20in%20the%20SKy)
+* [Refinery](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Hardware/Refinery)
+* [A pro gamer move](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Hardware/A%20pro%20gamer%20move)
 
 ## Misc
 * Remember AI
