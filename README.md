@@ -19,11 +19,10 @@ Since it's against the rule to provide one-click solutions to challenges, I woul
 * [A pro gamer move](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Hardware/A%20pro%20gamer%20move)
 
 ## Misc
-* Remember AI
+* [Remember AI](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/Remember%20AI)
 * Existential CrySyS
-* jif.rtfm
+* [jif.rtfm](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/jif.rtfm)
 * Infoleak
-* What's the diagnosis?
 
 ## Reverse
 * BabyVM
