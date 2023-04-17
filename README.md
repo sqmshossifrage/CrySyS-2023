@@ -28,12 +28,10 @@ Since it's against the rule to provide one-click solutions to challenges, I woul
 * BabyVM
 * heaptor2
 * Emoji 256
-* Onions
 * Symbolism
 
 ## Web
 * [A Jim Brown and an Ella Fitzgerald](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Web/A%20Jim%20Brown%20and%20an%20Ella%20Fitzgerald)
-* Evilbook
 
 
 
