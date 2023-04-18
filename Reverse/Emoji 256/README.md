@@ -1,1 +1,5 @@
-This is the hardest one among all challenges I solved in the CTF. We are given a binary and a few lines of emoji. First play with the binary, we realize that if we 
+This is the hardest one among all challenges I solved in the CTF. We are given a binary and a few lines of emoji to decrypt. 
+
+First play with the binary. Just a few trials would tell us that the binary is a block cipher running in ECB mode with 8-byte block size. Because if we input 7 printable letters (with the eighth being new line `\n` or `0x0a`), it always returns 8 random emoji plus the rest being a recurring pattern 🐱🚛🐀🚞🚴🐤👑🍋. If we increase our input to 9 letters, the first 16 emoji will appear random and the rest is still maintaining the recurring pattern 🐱🚛🐀🚞🚴🐤👑🍋.
+
+Now it's time to look at the source code. Running `file` on the binary indicates that debug symbols are not stripped, a good start! Load the binary in Ghidra and realize it's heavily obfuscated with a lot of garbage code. 
