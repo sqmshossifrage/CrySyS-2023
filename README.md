@@ -20,14 +20,14 @@ Since it's against the rule to provide one-click solutions to challenges, I woul
 
 ## Misc
 * [Remember AI](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/Remember%20AI)
-* Existential CrySyS
+* [Existential CrySyS](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/Existential%20CrySyS)
 * [jif.rtfm](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/jif.rtfm)
 * Infoleak
 
 ## Reverse
 * BabyVM
 * heaptor2
-* Emoji 256
+* [Emoji 256](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Reverse/Emoji%20256)
 * Symbolism
 
 ## Web
