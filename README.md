@@ -22,7 +22,7 @@ Since it's against the rule to provide one-click solutions to challenges, I woul
 * [Remember AI](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/Remember%20AI)
 * [Existential CrySyS](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/Existential%20CrySyS)
 * [jif.rtfm](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/jif.rtfm)
-* Infoleak
+* [Infoleak](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/Infoleak)
 
 ## Reverse
 * BabyVM
