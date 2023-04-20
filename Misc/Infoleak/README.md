@@ -3,7 +3,7 @@ All we get is some pixelated text. When I look really hard into the picture I ca
 I first searched some online "AI-powered" tools for depixelation, but none of them worked properly for text. Then I found out a [writeup](https://bishopfox.com/blog/unredacter-tool-never-pixelation) and its tool [Unredacter](https://github.com/bishopfox/unredacter). However, for some reason this does not even work for the sample image provided by the author. The content of the writeup points us to [Depix](https://github.com/beurtschipper/Depix) which actually works. 
 
 Following the workflow for Depix, we first create a text file containing the [de Bruijn sequence](https://en.wikipedia.org/wiki/De_Bruijn_sequence) of all possible characters in the text. Based on a crude reading previously, there are not many capital letters. Thus the total character set for our sequence is `PCWabcdefghijklmnopqrstu0123456789$ vwxyz`. (My first character set actually did not contain `$` but I realized it occurred a lot of times in the text. Including it would significantly improve the quality of depixelation.) To generate the sequence, use the python script provided on the Wikipedia website. Then we paste the text into a Windows Notepad, make sure the fonts are of the same size, and take a screenshot. 
-![debruijn](./debruijn.PNG)
+![debruijn](./debruijn.png)
 
 Then we crop a single line of pixelated text, for example the last line
 
