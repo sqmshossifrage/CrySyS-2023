@@ -25,10 +25,10 @@ Since it's against the rule to provide one-click solutions to challenges, I woul
 * [Infoleak](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Misc/Infoleak)
 
 ## Reverse
-* BabyVM
-* heaptor2
+* [BabyVM](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Reverse/BabyVM)
+* [heaptor2](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Reverse/heaptor2)
 * [Emoji 256](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Reverse/Emoji%20256)
-* Symbolism
+* [Symbolism](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Reverse/Symbolism)
 
 ## Web
 * [A Jim Brown and an Ella Fitzgerald](https://github.com/sqmshossifrage/CrySyS-2023/tree/main/Web/A%20Jim%20Brown%20and%20an%20Ella%20Fitzgerald)
