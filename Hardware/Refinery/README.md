@@ -9,7 +9,7 @@ Knowing how to control the refinery, we interact directly with the "flag control
 b'\xa2\x04\xbeNever gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you'
 ```
 
-We manually control the refinery and realize, if we open both output valves of the ethanol tank, the tank will deplete in 3 minutes IRL. It took me some time to figure out why does this mean: look at the output - they are [E5 and E10](https://en.wikipedia.org/wiki/Common_ethanol_fuel_mixtures) tanks! I need to control the percentage of ethanol in both tanks by controlling the valves. My strategy is then
+We manually control the refinery and realize, if we open both output valves of the ethanol tank, the tank will deplete in 3 minutes IRL. It took me some time to figure out why it behaved like this: look at the output - they are [E5 and E10](https://en.wikipedia.org/wiki/Common_ethanol_fuel_mixtures) tanks! I need to control the percentage of ethanol in both tanks by controlling the valves. My strategy is then
 1. Initialization with manual mode and other stuff to keep the petroleum supply including open gasoline valves for both E5 and E10. 
 2. Open ethanol valve for E5, wait for 60 seconds IRL, close the valve. 
 3. Open ethanol valve for E10, wait for 120 seconds IRL, close the valve. 
